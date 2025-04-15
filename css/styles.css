@@ -21,4 +21,11 @@ nav ul {
 body {
   margin: 0;
   font-family: sans-serif;
+  background-color: rgb(46, 46, 46);
+  color: rgb(243, 243, 243);
+}
+.title{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
