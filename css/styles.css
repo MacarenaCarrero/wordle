@@ -29,3 +29,9 @@ body {
   justify-content: center;
   margin-top: 50px;
 }
+
+.createRow{
+display: grid;
+grid-template-columns: repeat(40px);
+gap: 5px;
+}
