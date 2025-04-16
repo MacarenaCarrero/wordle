@@ -1,3 +1,4 @@
+const rootStyles = document.documentElement.style;
 const boxGameElement = document.getElementById('boxGame');
 const wordElement = document.getElementById('word');
 
@@ -28,11 +29,16 @@ const length = selectWord.length;
 const attempts = 5; // INTENTOS const o let ?¿ si tiene que cambiar
 
 const gameBoard = () => {
-  const row = document.createElement('div');
-  const cell = document.createElement('div');
   for (let intento = 0; intento < attempts; intento++) {
-    //hace hasta 5 jugadas
+    const row = document.createElement('div');
     row.classList.add('createRow');
-    for (let letter = 0; letter < length; letra++) {}
+
+    for (let letra = 0; letra < length; letra++) {
+      const cell = document.createElement('div');
+      cell.classList.add('createCell');
+      row.appendChild(cell);
+    }
+
+    boxGameElement.appendChild(row);
   }
 };
